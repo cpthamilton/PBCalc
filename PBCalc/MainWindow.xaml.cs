@@ -69,7 +69,17 @@ namespace PBCalc
             PointsRemaining = StartingPointValue;
             CurrentStats = new int[6] { 8, 8, 8, 8, 8, 8 };
 
-            currentPoints.Text = PointsRemaining.ToString();
+            currentPoints.Text = PointsRemaining.ToString()+" ";
+            updateScores();
+        }
+        private void updateScores()
+        {
+            StrVal.Text = CurrentStats[0].ToString();
+            DexVal.Text = CurrentStats[1].ToString();
+            ConVal.Text = CurrentStats[2].ToString();
+            IntVal.Text = CurrentStats[3].ToString();
+            WisVal.Text = CurrentStats[4].ToString();
+            ChaVal.Text = CurrentStats[5].ToString();
         }
     }
 }

@@ -3,6 +3,49 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="statRectangleStyle" TargetType="{x:Type Rectangle}">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Height" Value="10" />
+            <Setter Property="Width" Value="485" />
+            <Setter Property="Fill" Value="#99F8F8FF" />
+        </Style>
+        <Style x:Key="statLabelTextStyle" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="FontFamily" Value="Viner Hand ITC" />
+        </Style>
+        <Style x:Key="statValueTextStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Height" Value="50" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="FontSize" Value="32" />
+            <Setter Property="FontFamily" Value="Viner Hand ITC" />
+            <Setter Property="IsReadOnly" Value="True" />
+            <Setter Property="BorderThickness" Value="0" />
+        </Style>
+        <Style x:Key="statDownButtonStyle" TargetType="{x:Type Image}">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Height" Value="15" />
+            <Setter Property="Width" Value="15" />
+            <Setter Property="Source" Value="LeftArrow.png" />
+            <Setter Property="Cursor" Value="Hand" />
+        </Style>
+        <Style x:Key="statUpButtonStyle" TargetType="{x:Type Image}">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="VerticalAlignment" Value="Top" />
+            <Setter Property="Height" Value="15" />
+            <Setter Property="Width" Value="15" />
+            <Setter Property="Source" Value="RightArrow.png" />
+            <Setter Property="Cursor" Value="Hand" />            
+        </Style>
     </Application.Resources>
 </Application>
